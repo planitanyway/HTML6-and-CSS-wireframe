@@ -1,0 +1,9 @@
+body {
+    .rounded {
+        height: 100px;
+        width: 300px;
+        background-color: aqua;
+        margin-left: 24px;
+        border-radius: 10px;
+    }
+}
