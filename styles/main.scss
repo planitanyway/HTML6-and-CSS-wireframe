@@ -3,8 +3,9 @@
 @import './partials/mixins';
 @import './partials/typography';
 
+
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  @include body();
   margin: 0;
 }
 
@@ -22,8 +23,8 @@ body {
 }
 
 .nav {
-
-  background-color: #150300;
+  @include nav();
+  background-color: $darker-background;
   padding: 15px;
   margin: 0;
 }
@@ -34,23 +35,20 @@ a {
   text-transform: uppercase;
 }
 
-.discover {
-  color: goldenrod;
+.heading {
+  @include heading();
   margin: none;
   padding: none;
-  font-style: marck;
 }
 
-.story {
-  text-transform: uppercase;
-  font-size: 30px;
-  font-style: bold;
+.title {
+  @include title();
   margin: none;
   padding: none;
 }
 
 .about {
-  color:goldenrod;
+  color: $secondary-font-color;
   text-transform: uppercase;
   text-decoration: underline;
 }
