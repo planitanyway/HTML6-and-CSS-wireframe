@@ -1,0 +1,65 @@
+@import './vendor/normalize';
+@import './partials/colors';
+@import './partials/mixins';
+@import './partials/typography';
+
+
+body {
+  @include body();
+  margin: 0;
+}
+
+.columns {
+  display: inline-block;
+}
+
+.left {
+  text-align: center;
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.nav {
+  @include nav();
+  background-color: $darker-background;
+  padding: 15px;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.heading {
+  @include heading();
+  margin: none;
+  padding: none;
+}
+
+.title {
+  @include title();
+  margin: none;
+  padding: none;
+}
+
+.about {
+  color: $secondary-font-color;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+
+// Medium screens and up
+@media (min-width: 768px) {
+  
+  }
+
+// Big screens
+@media (min-width: 1024px) {
+
+}
